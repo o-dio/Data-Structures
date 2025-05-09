@@ -8,24 +8,36 @@ int* linearSearch(int* list);
 int main(){
 
   int list[N], i;
-
-  printf("/n%d/n", N);
   
   for(i = 0; i < N; i++){
     list[i] = N - i;
-    printf("/n%d/n", list[i]);
+    prtinf("%d\n", list[i]);
   }
   
-  linearSearch(list);
+  list = linearSearch(list, N);
+
+  printf("------------\n");
+  
+  for(i = 0; i < N; i++){
+    prtinf("%d\n", list[i]);
+  }
   
   return 0;
 }
 
-int* linearSearch(int* list){
+int* linearSearch(int* list, int s){
 
-  int size = sizeof(list)/sizeof(int);
+  int i, j, box;
+
+  for(i = 1; i < s; i++){
+    j = i-1;
+    box = list[i]
+    while(!(j<0) && (list[j] > list[i])){
+      list[j+1] = list[j];
+      j--;
+    }
+    list[j+1] = box;
+  }
   
-  printf("%d", size);
-
   return list;
 }
