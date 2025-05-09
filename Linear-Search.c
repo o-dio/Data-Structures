@@ -31,7 +31,7 @@ int* linearSearch(int* list, int s){
 
   for(i = 1; i < s; i++){
     j = i-1;
-    box = list[i]
+    box = list[i];
     while(!(j<0) && (list[j] > list[i])){
       list[j+1] = list[j];
       j--;
