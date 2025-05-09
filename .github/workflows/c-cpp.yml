@@ -1,0 +1,19 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Compile
+      run: gcc Linear-Search.c -o executable.exe
+    - name: Run
+      run: ./executable.exe
