@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int* linearSearch(int* list);
+
 int main(){
 
-  int* list = [1, 2, 3, 4, 5];
+  int* list[5] = [1, 2, 3, 4, 5];
 
   linearSearch(list);
   
