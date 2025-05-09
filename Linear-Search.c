@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#DEFINE 10 N
+
 int* linearSearch(int* list);
 
 int main(){
 
-  int* list[5] = (1, 2, 3, 4, 5);
+  int list[N], i;
 
+  for(i = 0; i < N; i++){
+    list[i] = N - i;
+  }
+  
   linearSearch(list);
   
   return 1;
