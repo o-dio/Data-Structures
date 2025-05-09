@@ -3,7 +3,7 @@
 
 #define N 10
 
-int* linearSearch(int* list, int s);
+void linearSearch(int* list, int s);
 
 int main(){
 
@@ -14,7 +14,7 @@ int main(){
     printf("%d\n", list[i]);
   }
   
-  list = linearSearch(list, N);
+  linearSearch(list, N);
 
   printf("------------\n");
   
@@ -25,7 +25,7 @@ int main(){
   return 0;
 }
 
-int* linearSearch(int* list, int s){
+void linearSearch(int* list, int s){
 
   int i, j, box;
 
@@ -38,6 +38,4 @@ int* linearSearch(int* list, int s){
     }
     list[j+1] = box;
   }
-  
-  return list;
 }
