@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#DEFINE 10 N
+#define 10 N
 
 int* linearSearch(int* list);
 
