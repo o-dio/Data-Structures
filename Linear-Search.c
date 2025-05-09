@@ -9,7 +9,7 @@ int main(){
 
   int list[N], i;
 
-  printf("/n%d/n", N)
+  printf("/n%d/n", N);
   
   for(i = 0; i < N; i++){
     list[i] = N - i;
