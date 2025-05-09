@@ -15,7 +15,7 @@ int main(){
   
   linearSearch(list);
   
-  return 1;
+  return 0;
 }
 
 int* linearSearch(int* list){
