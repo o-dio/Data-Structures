@@ -13,7 +13,7 @@ int main(){
   
   for(i = 0; i < N; i++){
     list[i] = N - i;
-    printf("/n%d/n", list[i])
+    printf("/n%d/n", list[i]);
   }
   
   linearSearch(list);
