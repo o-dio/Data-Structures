@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Compile
-      run: gcc Insertion-Sort.c -o executable.exe
+      run: gcc Selection-Sort.c -o executable.exe
     - name: Run
       run: ./executable.exe
