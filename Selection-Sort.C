@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define N 10;
+#define N 10
 
 void selectionSort(int* list, int size);
 
@@ -27,4 +27,19 @@ int main(){
 
 void selectionSort(int* list, int size){
 
+  int i, j, min, aux;
+
+  for(i=0; i<(size - 1); i++){
+    min = i;
+    for(j=(i+1); j<size; j++){
+      if(list[j] < list[min]){
+        min = j;
+      }
+    }
+    if(min != i){
+        aux = list[i];
+        list[i] = list[min];
+        list[min] = aux;
+    }
+  }
 }
