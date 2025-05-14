@@ -3,7 +3,7 @@
 
 #define N 10
 
-void linearSearch(int* list, int s);
+void insertionSort(int* list, int s);
 
 int main(){
 
@@ -14,7 +14,7 @@ int main(){
     printf("%d\n", list[i]);
   }
   
-  linearSearch(list, N);
+  insertionSort(list, N);
 
   printf("------------\n");
   
@@ -25,7 +25,7 @@ int main(){
   return 0;
 }
 
-void linearSearch(int* list, int s){
+void insertionSort(int* list, int s){
 
   int i, j, box;
 
